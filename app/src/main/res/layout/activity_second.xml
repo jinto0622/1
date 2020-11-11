@@ -6,14 +6,14 @@
     android:layout_height="match_parent">
 
     <com.ssomai.android.scalablelayout.ScalableLayout
-        android:id="@+id/scalableLayout"
-        android:background="@android:color/darker_gray"
+
+        android:id="@+id/scalableLayout2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:scale_base_height="200"
         app:scale_base_width="400">
 
@@ -30,6 +30,42 @@
 
 
     </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="344dp"
+        android:layout_height="110dp"
+        android:background=""
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408"
+        app:srcCompat="@drawable/layout1_read" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="617dp"
+        android:layout_height="339dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
+        app:srcCompat="@drawable/layout1_trachtenberg" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="344dp"
+        android:layout_height="110dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@drawable/layout1_multiplication" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
